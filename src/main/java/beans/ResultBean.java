@@ -3,6 +3,7 @@ package beans;
 import database.ResultInterface;
 import lombok.Data;
 import lombok.Getter;
+import lombok.Setter;
 
 import javax.inject.Inject;
 import javax.annotation.PostConstruct;
@@ -22,6 +23,13 @@ public class ResultBean implements Serializable {
 
     private Result currResult;
     private List<Result> resultList;
+    /**
+     * -- SETTER --
+     *  Sets the source attribute.
+     *
+     * @param source The source to be set.
+     */
+    @Setter
     @Getter
     private String source;
 
@@ -62,12 +70,4 @@ public class ResultBean implements Serializable {
         updateLocal();
     }
 
-    /**
-     * Sets the source attribute.
-     *
-     * @param source The source to be set.
-     */
-    public void setSource(String source) {
-        this.source = source;
-    }
 }
