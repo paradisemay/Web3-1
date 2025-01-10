@@ -11,10 +11,16 @@ import java.util.Date;
 /**
  * This class represents a time-keeping component for managing and displaying date and time information.
  */
-@Getter
 @Setter
+@Getter
 @ToString
 public class TimeKeeper implements Serializable {
+    /**
+     * -- SETTER --
+     *  Sets the time to the specified value.
+     *
+     * @param time The time string to be set.
+     */
     private String time;
 
     /**
@@ -32,15 +38,6 @@ public class TimeKeeper implements Serializable {
      */
     public TimeKeeper() {
         this.time = formatDate(new Date());
-    }
-
-    /**
-     * Sets the time to the specified value.
-     *
-     * @param time The time string to be set.
-     */
-    public void setTime(String time) {
-        this.time = time;
     }
 
     /**
