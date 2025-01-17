@@ -16,10 +16,11 @@
 
         <h:form styleClass="main__datetime">
             <h:outputText id="my-clock" value="#{timeKeeper.time}"/>
-            <p:poll interval="11" update="my-clock" listener="#{timeKeeper.updateTime}"/>
+            <p:poll interval="8" update="my-clock" listener="#{timeKeeper.updateTime}"/>
+<!--            время обновления-->
         </h:form>
 
-        <h:button outcome="main" style="width: 150px" styleClass="big-btn" value="Verify!"/>
+        <h:button outcome="main" style="width: 150px" styleClass="big-btn" value="Я не робот"/>
     </ui:define>
 </ui:composition>
 </html>

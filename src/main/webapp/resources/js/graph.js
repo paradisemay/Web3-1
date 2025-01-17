@@ -78,7 +78,7 @@ function redrawGraph(r) {
     const fontSize = hatchGap / 3.5
     ctx.fillStyle = 'black'
 
-    ctx.font = `${fontSize * 1.4}px "Ferrum", "Morice", fantasy`;
+    ctx.font = `${fontSize * 1.4}px "Arial", "Arial", fantasy`;
     ctx.fillText('y', w / 2 - hatchWidth * 2.8, 15)
     ctx.fillText('x', w - 20, h / 2 - hatchWidth * 2.4)
 
@@ -91,7 +91,7 @@ function redrawGraph(r) {
         label2 = r
     }
 
-    ctx.font = `${fontSize}px "Ferrum", "Morice", fantasy`;
+    ctx.font = `${fontSize}px "Arial", "Arial", fantasy`;
     ctx.fillText(label1, w / 2 + hatchGap - 3, h / 2 + hatchWidth * 2.8);
     ctx.fillText(label2, w / 2 + hatchGap * 2 - 3, h / 2 + hatchWidth * 2.8);
     ctx.fillText('-' + label1, w / 2 - hatchGap - 7, h / 2 + hatchWidth * 2.8);

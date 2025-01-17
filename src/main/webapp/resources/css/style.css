@@ -16,7 +16,7 @@
 .header__title {
   text-transform: uppercase;
   font-size: 1.8rem;
-  font-family: "Ferrum", "Morice", fantasy;
+  font-family: "Arial", "Arial", fantasy;
 }
 
 .header__title._active {
@@ -344,7 +344,7 @@ input#form\:RValue, input#form\:XValue {
 .main__datetime {
   margin: 15px 0;
   font-size: 24px;
-  font-family: "Ferrum", "Morice", fantasy;
+  font-family: "Arial", "Arial", fantasy;
 }
 
 .main__table-block {
@@ -436,6 +436,6 @@ table.main__table td {
 
 .footer__title {
   text-transform: uppercase;
-  font-family: "Ferrum", "Morice", fantasy;
+  font-family: "Arial", "Arial", fantasy;
   font-size: 1.25rem;
 }
